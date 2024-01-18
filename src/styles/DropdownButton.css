@@ -1,0 +1,40 @@
+/* DropdownButton.css */
+
+.dropdown-container {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-btn {
+	padding: 10px;
+	cursor: pointer;
+  }
+
+  .dropdown-list {
+	display: none;
+	flex-direction: column-reverse;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #f9f9f9;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    padding: 10px;
+    
+  }
+  
+  .dropdown-item {
+	padding: 10px;
+	cursor: pointer;
+  }
+  
+  .dropdown-container:hover{
+	display: block;
+  }
+  .dropdown-list:hover{
+	display: flex;
+  }
+  .dropdown-item:hover{
+	background-color: rgb(227, 129, 129);
+  }
+  

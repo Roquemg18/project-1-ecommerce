@@ -1,0 +1,25 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px; /* Ajusta según tus necesidades */
+    margin: 0 auto;
+  }
+  
+  .carousel-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde para resaltar el área del item */
+  }
+  
+  .carousel-btn {
+    cursor: pointer;
+    padding: 5px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 0 5px;
+  }
