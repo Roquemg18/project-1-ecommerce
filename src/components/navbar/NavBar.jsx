@@ -94,10 +94,11 @@ export default function NavBar({ productos }) {
               <div className="fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
                 <div className="flex flex-col w-64 bg-white h-full ">
                   <div className="flex gap-x-48">
+                    <Link to={"/"}>
                     <img
                       className="h-7 w-7"
                       src="https://nikearprod.vtexassets.com/assets/vtex.file-manager-graphql/images/f97c1ee4-0e66-4225-b378-f4ae7d491bc7___39627060035c5a0d813f57675cef86ea.svg"
-                    />
+                    /></Link>
                     <button onClick={handleLinks}>
                       <XMarkIcon className="h-8  text-gray-500"></XMarkIcon>
                     </button>
@@ -109,7 +110,7 @@ export default function NavBar({ productos }) {
             )}
           </div>
 
-          <Link to={"/home"} className="mx-auto">
+          <Link to={"/"} className="mx-auto">
             <img
               className="w-16 h-6 mt-2 ml-16"
               src="https://i.pinimg.com/originals/20/60/2d/20602d43cc993811e5a6bd1886af4f33.png"

@@ -2,14 +2,12 @@
 
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import React, { useState, useEffect } from "react";
-import "../../styles/dropdown.css";
+import "../../styles/Dropdown.css";
 
 function Dropdown({ options, titulo, onChange }) {
-
   const initialWidth = window.innerWidth;
 
   const [isOpen, setIsOpen] = useState(initialWidth > 650);
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -17,7 +15,6 @@ function Dropdown({ options, titulo, onChange }) {
     };
 
     window.addEventListener("resize", handleResize);
-
 
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -29,7 +26,6 @@ function Dropdown({ options, titulo, onChange }) {
   };
 
   const handleCheckboxChange = (option) => {
-
     onChange(option);
   };
 

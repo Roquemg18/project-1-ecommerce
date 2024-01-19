@@ -27,7 +27,7 @@ function App() {
       <CartProvider>
         <NavBar productos={products} />
         <Routes>
-          <Route path="/home" element={<PagHome />} />
+          <Route path="/" element={<PagHome />} />
           <Route
             path="/productos/"
             element={<Products palabra="Productos" />}
